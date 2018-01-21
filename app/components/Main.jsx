@@ -2,16 +2,22 @@ var React = require('react');
 var Nav = require('Nav');
 
 
-var Main = React.createClass({
-    render: function () {
+var Main = ({children})=>{
+
         return(
             <div>
                 <Nav/>
-                
-                {this.props.children}
+                <div className='row'>
+                    <div className='columns medium-6 large-4 small-centered'>
+                        {children}
+                    </div>
+                </div>
             </div>
         );
     }
-});
+
+
+
+
 
 module.exports = Main;

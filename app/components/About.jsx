@@ -1,15 +1,24 @@
 var React = require('react');
 
-var About = React.createClass({
-    render: function(){
+var About = (props)=>{
         return (
             <div>
-            <h3>About Component </h3>
+            <h1 className='text-center page-title '>About</h1>
+            <p>about page</p>
+            <p> Tools used:</p>
+            <ul>
+                <li>
+                    <a href="https://facebook.github.io/react">React</a> - JavaScript framework
+                </li>
+                <li>
+                    <a href="https://openweathermap.org">open weather map</a> - weather api
+                </li>
+            </ul>
 
             </div>
         )
     }
 
-})
+
 
 module.exports = About;
